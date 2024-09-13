@@ -1,0 +1,95 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.gradient-background {
+  background: linear-gradient(300deg, #402E7A, #4C3BCF, #4B70F5, #3DC2EC);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #C2CAED;
+  position: fixed 100vh;
+}
+  
+  /* Add a gray background color and some padding to the footer */
+footer {
+  padding: 25px;
+  }
+
+.jumbotron{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#first {
+      
+  background-color: #252524;
+  border: 5px solid #252524;
+  border-radius: 10px;
+  width: 50%;
+  height: 250px;
+  padding: 20px;
+  display: block;
+  
+}
+#second {
+  background-color: #252524;
+  border: 5px solid #252524;
+  border-radius: 10px;
+  width: 50%;
+  height: 250px;
+  display: block;
+}
+#third {
+  background-color: #252524;
+  border: 5px solid #252524;
+  border-radius: 10px;
+  width: 50%;
+  height: 250px;
+  display: block;
+}
+
+.containerSkills {
+  background-color: #252524;
+  border: 5px solid #252524;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.containerSkills p {
+  color: black;
+}
+
+#first img {
+  float: left;
+}
+
+#second img {
+  float: right;
+}
+
+#third img {
+  float: left;
+}
+
+.containerSkills p {
+  color: white;
+}
