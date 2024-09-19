@@ -1,6 +1,12 @@
-/* Remove the navbar's default margin-bottom and rounded borders */ 
+/* Remove the navbar's default margin-bottom and rounded borders */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .gradient-background {
-  background: linear-gradient(300deg, #402E7A, #4C3BCF, #4B70F5, #3DC2EC);
+  background: linear-gradient(300deg, #402e7a, #4c3bcf, #4b70f5, #3dc2ec);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
@@ -20,16 +26,16 @@
 #navbar {
   margin-bottom: 0;
   border-radius: 0;
-  background-color: #C2CAED;
+  background-color: #3e5de6;
   position: fixed 100vh;
 }
-  
-  /* Add a gray background color and some padding to the footer */
+
+/* Add a gray background color and some padding to the footer */
 footer {
   padding: 25px;
-  }
+}
 
-.jumbotron{
+.jumbotron {
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -37,45 +43,39 @@ footer {
 }
 
 #first {
-      
-  background-color: #252524;
-  border: 5px solid #252524;
+  background-color: #b6b6b3;
+  /* border: 5px solid #d3d30a; */
   border-radius: 10px;
-  width: 50%;
-  height: 250px;
-  padding: 20px;
-  display: block;
-  
+  grid-column: span 2;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
+
 #second {
-  background-color: #252524;
-  border: 5px solid #252524;
+  background-color: #b6b6b3;
+  /* border: 5px solid #e0e013; */
   border-radius: 10px;
-  width: 50%;
-  height: 250px;
-  display: block;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 #third {
-  background-color: #252524;
-  border: 5px solid #252524;
+  background-color: #b6b6b3;
+  /* border: 5px solid #d6d61f; */
   border-radius: 10px;
-  width: 50%;
-  height: 250px;
-  display: block;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .containerSkills {
-  background-color: #252524;
-  border: 5px solid #252524;
-  display: inline-flex;
-  flex-direction: column;
+  background-color: #ffffff;
+  /* border: 5px solid #252524; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  display: grid;
   gap: 20px;
-  align-items: center;
-  padding-bottom: 20px;
+  margin: 15px;
 }
 
 .containerSkills p {
   color: black;
+  padding: 15px;
 }
 
 #first img {
@@ -91,5 +91,18 @@ footer {
 }
 
 .containerSkills p {
-  color: white;
+  color: rgb(0, 0, 0);
+}
+
+.col-sm-3 img {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* horizontal offset 4px, vertical offset 4px, blur radius 4px, color #000 with 50% opacity */
+}
+
+#canvas1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#ffc38c, #ff9b40);
 }
