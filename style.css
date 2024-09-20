@@ -3,6 +3,8 @@
   background: linear-gradient(300deg, #402e7a, #4c3bcf, #4b70f5, #3dc2ec);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
+  position: relative;
+  z-index: 10;
 }
 
 @keyframes gradient-animation {
@@ -29,42 +31,55 @@ footer {
   padding: 25px;
 }
 
+#footer {
+  border-top: solid #252524;
+}
+
 .jumbotron {
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+  border-bottom: 5px solid #252524;
 }
 
 #first {
-  background-color: #b6b6b3;
+  background-color: #b6b6b39d;
   /* border: 5px solid #d3d30a; */
   border-radius: 10px;
   grid-column: span 2;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
 }
 
 #second {
-  background-color: #b6b6b3;
+  background-color: #b6b6b39d;
   /* border: 5px solid #e0e013; */
   border-radius: 10px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
 }
 #third {
-  background-color: #b6b6b3;
+  background-color: #b6b6b39d;
   /* border: 5px solid #d6d61f; */
   border-radius: 10px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
 }
 
 .containerSkills {
   background-color: #ffffff00;
   /* border: 5px solid #252524; */
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   display: grid;
   gap: 50px;
   margin: 15px;
+  margin-bottom: 50px;
 }
 
 .containerSkills p {
@@ -90,20 +105,22 @@ footer {
 
 .col-sm-3 img {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* horizontal offset 4px, vertical offset 4px, blur radius 4px, color #000 with 50% opacity */
+  position: relative;
+  z-index: 10;
 }
 
 .background {
-  border: 5px solid #252524;
+  /* border: 5px solid #252524; */
   background-color: #ffffff;
   object-fit: contain;
   background-size: cover;
   background-position: center;
   position: absolute;
-}
-#all {
+  z-index: 0;
 }
 
 canvas {
   position: absolute;
   top: 0;
+  z-index: 0;
 }
